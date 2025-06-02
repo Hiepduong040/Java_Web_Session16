@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thêm xe mới</title>
+</head>
+<body>
+<h1>Thêm xe mới</h1>
+<form action="#" th:action="@{/bus/create}" method="post">
+    <label>Biển số:</label>
+    <input type="text" name="licensePlate" required />
+    <br />
+    <label>Loại xe:</label>
+    <select name="busType" required>
+        <option value="NORMAL">NORMAL</option>
+        <option value="VIP">VIP</option>
+        <option value="LUXURY">LUXURY</option>
+    </select>
+    <br />
+    <label>Số hàng ghế:</label>
+    <input type="number" name="rowSeat" min="1" required />
+    <br />
+    <label>Số cột ghế:</label>
+    <input type="number" name="colSeat" min="1" required />
+    <br />
+    <label>Ảnh (URL):</label>
+    <input type="text" name="image" required />
+    <br />
+    <button type="submit">Thêm xe</button>
+</form>
+<a href="/bus">Quay lại danh sách</a>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách chuyến xe</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<h1>Danh sách chuyến xe</h1>
+
+<div>
+    <form action="/home/search" method="get" style="margin-bottom: 20px;">
+        <input type="text" name="departure" placeholder="Điểm đi" required>
+        <input type="text" name="destination" placeholder="Điểm đến" required>
+        <button type="submit">Tìm kiếm</button>
+    </form>
+
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Điểm đi</th>
+        <th>Điểm đến</th>
+        <th>Giờ khởi hành</th>
+        <th>Giá vé</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="trip : ${trips}">
+        <td th:text="${trip.id}"></td>
+        <td th:text="${trip.departure}"></td>
+        <td th:text="${trip.destination}"></td>
+        <td th:text="${trip.departureTime}"></td>
+        <td th:text="${trip.price} + ' VND'"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
