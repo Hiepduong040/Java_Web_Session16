@@ -1,9 +1,9 @@
-package ra.repository;
+package data.repository;
 
 import org.springframework.stereotype.Repository;
-import ra.model.Bus;
-import ra.utils.BusType;
-import ra.utils.ConnectionDB;
+import data.model.Bus;
+import data.utils.BusType;
+import data.utils.ConnectionDB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

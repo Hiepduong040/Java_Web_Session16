@@ -1,6 +1,6 @@
-package ra.repository;
+package data.repository;
 
-import ra.model.Bus;
+import data.model.Bus;
 
 import java.util.List;
 

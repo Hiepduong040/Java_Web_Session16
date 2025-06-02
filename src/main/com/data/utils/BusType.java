@@ -1,4 +1,4 @@
-package ra.utils;
+package data.utils;
 
 public enum BusType {
     STANDARD("Standard"),

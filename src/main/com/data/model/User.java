@@ -1,4 +1,4 @@
-package ra.model;
+package data.model;
 
 
 import lombok.AllArgsConstructor;

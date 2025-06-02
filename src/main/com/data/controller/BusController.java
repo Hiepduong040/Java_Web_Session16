@@ -1,11 +1,11 @@
-package ra.controller;
+package data.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ra.model.Bus;
-import ra.service.BusService;
+import data.model.Bus;
+import data.service.BusService;
 
 import java.util.List;
 

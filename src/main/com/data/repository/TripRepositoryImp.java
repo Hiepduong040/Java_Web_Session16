@@ -1,8 +1,8 @@
-package ra.repository;
+package data.repository;
 
 import org.springframework.stereotype.Repository;
-import ra.model.Trip;
-import ra.utils.ConnectionDB;
+import data.model.Trip;
+import data.utils.ConnectionDB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

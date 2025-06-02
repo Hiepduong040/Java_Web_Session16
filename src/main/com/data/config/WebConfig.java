@@ -1,4 +1,4 @@
-package ra.config;
+package data.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

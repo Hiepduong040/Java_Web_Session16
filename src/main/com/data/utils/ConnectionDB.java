@@ -1,4 +1,4 @@
-package ra.utils;
+package data.utils;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

@@ -1,4 +1,4 @@
-package ra.config;
+package data.config;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
@@ -16,7 +16,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 @Configuration
 @EnableWebMvc
 @ComponentScan(
-        basePackages = ("ra")
+        basePackages = ("data")
 )
 
 

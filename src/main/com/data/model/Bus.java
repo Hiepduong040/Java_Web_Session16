@@ -1,9 +1,9 @@
-package ra.model;
+package data.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ra.utils.BusType;
+import data.utils.BusType;
 
 @NoArgsConstructor
 @AllArgsConstructor

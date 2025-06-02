@@ -1,6 +1,6 @@
-package ra.service;
+package data.service;
 
-import ra.model.Bus;
+import data.model.Bus;
 
 import java.util.List;
 

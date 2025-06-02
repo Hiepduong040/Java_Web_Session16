@@ -1,9 +1,9 @@
-package ra.service;
+package data.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ra.model.Bus;
-import ra.repository.BusRepository;
+import data.model.Bus;
+import data.repository.BusRepository;
 
 import java.util.List;
 
